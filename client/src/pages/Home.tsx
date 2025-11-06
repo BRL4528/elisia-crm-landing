@@ -58,7 +58,11 @@ export default function Home() {
             </a>
           </nav>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button>Acessar Plataforma</Button>
+            <Button asChild>
+              <a href="https://elisiacrm.vercel.app" target="_blank" rel="noopener noreferrer">
+                Acessar Plataforma
+              </a>
+            </Button>
           </motion.div>
         </div>
       </motion.header>
