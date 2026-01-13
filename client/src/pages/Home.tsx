@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
 import { Target, CheckSquare, Award, MessageCircle, TrendingUp, Users, Zap, Shield, Filter, Bot } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -26,14 +27,14 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <motion.header 
+      <motion.header
         className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="container flex h-16 items-center justify-between">
-          <motion.div 
+          <motion.div
             className="flex items-center gap-2"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
@@ -70,27 +71,27 @@ export default function Home() {
       {/* Hero Section */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-primary/5 to-background overflow-hidden">
         <div className="container">
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto text-center"
             initial="hidden"
             animate="visible"
             variants={containerVariants}
           >
-            <motion.h1 
+            <motion.h1
               className="text-4xl md:text-6xl font-bold tracking-tight mb-6"
               variants={itemVariants}
             >
               CRM Inteligente para
               <span className="text-primary"> Resultados Extraordinários</span>
             </motion.h1>
-            <motion.p 
+            <motion.p
               className="text-xl text-muted-foreground mb-8"
               variants={itemVariants}
             >
-              Elisia é o CRM moderno e prático que combina inteligência artificial com gestão eficiente. 
+              Elisia é o CRM moderno e prático que combina inteligência artificial com gestão eficiente.
               Controle metas, atribua ações, configure premiações e conte com a Agent Elisia para manter tudo sob controle.
             </motion.p>
-            <motion.div 
+            <motion.div
               className="flex flex-col sm:flex-row gap-4 justify-center"
               variants={itemVariants}
             >
@@ -112,7 +113,7 @@ export default function Home() {
       {/* Features Section */}
       <section id="features" className="py-20 bg-background">
         <div className="container">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -198,11 +199,11 @@ export default function Home() {
                 <span className="text-primary"> Sua Assistente Pessoal</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                A Agent Elisia é uma assistente com inteligência artificial que trabalha 24/7 para manter 
-                tudo sob controle. Ela interage proativamente com seus vendedores, monitora métricas importantes 
+                A Agent Elisia é uma assistente com inteligência artificial que trabalha 24/7 para manter
+                tudo sob controle. Ela interage proativamente com seus vendedores, monitora métricas importantes
                 e te mantém informado com reports diários personalizados.
               </p>
-              <motion.ul 
+              <motion.ul
                 className="space-y-4"
                 variants={containerVariants}
                 initial="hidden"
@@ -255,7 +256,7 @@ export default function Home() {
               className="relative"
             >
               <div className="bg-background rounded-2xl p-8 shadow-xl border-2 border-primary/20 relative overflow-hidden">
-                <motion.div 
+                <motion.div
                   className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"
                   animate={{
                     opacity: [0.3, 0.5, 0.3],
@@ -281,26 +282,26 @@ export default function Home() {
                     <Bot className="w-32 h-32 text-primary" />
                   </motion.div>
                 </div>
-                <motion.div 
+                <motion.div
                   className="mt-6 space-y-3"
                   variants={containerVariants}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
                 >
-                  <motion.div 
+                  <motion.div
                     className="bg-primary/5 rounded-lg p-3 border border-primary/20"
                     variants={itemVariants}
                   >
                     <p className="text-sm font-medium">💬 "Bom dia! Suas vendas aumentaram 15% esta semana."</p>
                   </motion.div>
-                  <motion.div 
+                  <motion.div
                     className="bg-primary/5 rounded-lg p-3 border border-primary/20"
                     variants={itemVariants}
                   >
                     <p className="text-sm font-medium">📊 "3 leads precisam de follow-up hoje."</p>
                   </motion.div>
-                  <motion.div 
+                  <motion.div
                     className="bg-primary/5 rounded-lg p-3 border border-primary/20"
                     variants={itemVariants}
                   >
@@ -364,11 +365,11 @@ export default function Home() {
                 Integração Oficial com WhatsApp Business
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Conecte seu CRM diretamente com a API oficial do WhatsApp Business. 
-                Automatize mensagens, gerencie conversas e mantenha todo histórico de interações 
+                Conecte seu CRM diretamente com a API oficial do WhatsApp Business.
+                Automatize mensagens, gerencie conversas e mantenha todo histórico de interações
                 com seus clientes em um só lugar.
               </p>
-              <motion.ul 
+              <motion.ul
                 className="space-y-4"
                 variants={containerVariants}
                 initial="hidden"
@@ -411,7 +412,7 @@ export default function Home() {
       {/* Benefits Section */}
       <section id="benefits" className="py-20 bg-primary/5">
         <div className="container">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -425,7 +426,7 @@ export default function Home() {
               Mais do que um CRM, uma plataforma completa para transformar sua gestão
             </p>
           </motion.div>
-          <motion.div 
+          <motion.div
             className="grid md:grid-cols-3 gap-8"
             variants={containerVariants}
             initial="hidden"
@@ -433,7 +434,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <motion.div className="text-center" variants={itemVariants}>
-              <motion.div 
+              <motion.div
                 className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4"
                 whileHover={{ scale: 1.1, rotate: 360 }}
                 transition={{ duration: 0.5 }}
@@ -446,7 +447,7 @@ export default function Home() {
               </p>
             </motion.div>
             <motion.div className="text-center" variants={itemVariants}>
-              <motion.div 
+              <motion.div
                 className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4"
                 whileHover={{ scale: 1.1, rotate: 360 }}
                 transition={{ duration: 0.5 }}
@@ -459,7 +460,7 @@ export default function Home() {
               </p>
             </motion.div>
             <motion.div className="text-center" variants={itemVariants}>
-              <motion.div 
+              <motion.div
                 className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4"
                 whileHover={{ scale: 1.1, rotate: 360 }}
                 transition={{ duration: 0.5 }}
@@ -478,7 +479,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-b from-background to-primary/5">
         <div className="container">
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto text-center"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -529,6 +530,16 @@ export default function Home() {
                 <li><a href="#" className="hover:text-primary transition-colors">Sobre</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Contato</a></li>
+                <li>
+                  <Link href="/privacy-policy">
+                    <a className="hover:text-primary transition-colors">Política de Privacidade</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/terms-of-use">
+                    <a className="hover:text-primary transition-colors">Termos de Uso</a>
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
