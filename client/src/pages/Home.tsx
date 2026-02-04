@@ -531,9 +531,7 @@ export default function Home() {
                 <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Contato</a></li>
                 <li>
-                  <Link href="/privacy-policy">
-                    <a className="hover:text-primary transition-colors">Política de Privacidade</a>
-                  </Link>
+                  <a href="/privacy-policy" className="hover:text-primary transition-colors">Política de Privacidade</a>
                 </li>
                 <li>
                   <Link href="/terms-of-use">

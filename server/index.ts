@@ -2,6 +2,7 @@ import express from "express";
 import { createServer } from "http";
 import path from "path";
 import { fileURLToPath } from "url";
+import { privacyPolicyHtml } from "./pages/privacyPolicy";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,9 +19,10 @@ async function startServer() {
 
   app.use(express.static(staticPath));
 
-  // Serve static HTML pages for bots/crawlers that do not execute JavaScript
+  // Serve static HTML directly for bots/crawlers (no JS required)
   app.get("/privacy-policy", (_req, res) => {
-    res.sendFile(path.join(staticPath, "privacy-policy.html"));
+    res.setHeader("Content-Type", "text/html; charset=utf-8");
+    res.send(privacyPolicyHtml);
   });
 
   // Handle client-side routing - serve index.html for all routes
