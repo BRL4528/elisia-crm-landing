@@ -7,10 +7,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const outDir = path.resolve(__dirname, "..", "dist", "public");
 
-// VERCEL_URL é definido automaticamente pela Vercel no build (sem protocolo)
-// Exemplo: "seu-projeto.vercel.app"
-const vercelUrl = process.env.VERCEL_URL;
-const baseUrl = vercelUrl ? `https://${vercelUrl}` : "http://localhost:3000";
+// Prioridade: VERCEL_PROD_URL (deploy de produção) > BASE_URL (env customizada) > localhost
+// VERCEL_PROD_URL não tem protocolo, ex: "elisiacrm.com"
+const baseUrl = process.env.VERCEL_PROD_URL
+  ? `https://${process.env.VERCEL_PROD_URL}`
+  : process.env.BASE_URL || "http://localhost:3000";
 
 if (!fs.existsSync(outDir)) {
   fs.mkdirSync(outDir, { recursive: true });
