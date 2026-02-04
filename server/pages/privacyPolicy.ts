@@ -11,6 +11,7 @@ export function generatePrivacyPolicyHtml(baseUrl: string): string {
     <meta name="description" content="Política de Privacidade da ZMG SOLUTIONS LTDA – conheça como coletamos, usamos e protegemos os seus dados pessoais." />
 
     <!-- Open Graph (Facebook) -->
+    <meta property="fb:app_id" content="1377626990609802" />
     <meta property="og:title" content="Política de Privacidade – Elisia CRM" />
     <meta property="og:description" content="Política de Privacidade da ZMG SOLUTIONS LTDA – conheça como coletamos, usamos e protegemos os seus dados pessoais." />
     <meta property="og:image" content="${base}/og-image.png" />
