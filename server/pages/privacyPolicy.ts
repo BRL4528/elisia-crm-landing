@@ -5,6 +5,18 @@ export const privacyPolicyHtml = `<!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>Política de Privacidade – Elisia CRM</title>
     <meta name="description" content="Política de Privacidade da ZMG SOLUTIONS LTDA – conheça como coletamos, usamos e protegemos os seus dados pessoais." />
+
+    <!-- Open Graph (Facebook) -->
+    <meta property="og:title" content="Política de Privacidade – Elisia CRM" />
+    <meta property="og:description" content="Política de Privacidade da ZMG SOLUTIONS LTDA – conheça como coletamos, usamos e protegemos os seus dados pessoais." />
+    <meta property="og:image" content="https://placehold.co/1200x630/6366f1/ffffff?text=Elisia+CRM" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/privacy-policy" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Elisia CRM" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
