@@ -7,11 +7,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const outDir = path.resolve(__dirname, "..", "dist", "public");
 
-// Prioridade: VERCEL_PROD_URL (deploy de produção) > BASE_URL (env customizada) > localhost
-// VERCEL_PROD_URL não tem protocolo, ex: "elisiacrm.com"
-const baseUrl = process.env.VERCEL_PROD_URL
-  ? `https://${process.env.VERCEL_PROD_URL}`
-  : process.env.BASE_URL || "http://localhost:3000";
+// Domínio de produção usado nas tags OG (deve ser público e acessível pelo Facebook)
+const baseUrl = "https://www.elisiacrm.com";
 
 if (!fs.existsSync(outDir)) {
   fs.mkdirSync(outDir, { recursive: true });
