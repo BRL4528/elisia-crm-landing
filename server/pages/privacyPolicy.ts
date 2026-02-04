@@ -1,4 +1,8 @@
-export const privacyPolicyHtml = `<!doctype html>
+export function generatePrivacyPolicyHtml(baseUrl: string): string {
+  // Garante que baseUrl não tem barra final
+  const base = baseUrl.replace(/\/+$/, "");
+
+  return `<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -9,11 +13,11 @@ export const privacyPolicyHtml = `<!doctype html>
     <!-- Open Graph (Facebook) -->
     <meta property="og:title" content="Política de Privacidade – Elisia CRM" />
     <meta property="og:description" content="Política de Privacidade da ZMG SOLUTIONS LTDA – conheça como coletamos, usamos e protegemos os seus dados pessoais." />
-    <meta property="og:image" content="https://placehold.co/1200x630/6366f1/ffffff?text=Elisia+CRM" />
+    <meta property="og:image" content="${base}/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="/privacy-policy" />
+    <meta property="og:url" content="${base}/privacy-policy" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="Elisia CRM" />
 
@@ -186,3 +190,4 @@ export const privacyPolicyHtml = `<!doctype html>
     </div>
   </body>
 </html>`;
+}
