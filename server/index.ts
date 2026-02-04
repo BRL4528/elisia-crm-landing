@@ -18,6 +18,11 @@ async function startServer() {
 
   app.use(express.static(staticPath));
 
+  // Serve static HTML pages for bots/crawlers that do not execute JavaScript
+  app.get("/privacy-policy", (_req, res) => {
+    res.sendFile(path.join(staticPath, "privacy-policy.html"));
+  });
+
   // Handle client-side routing - serve index.html for all routes
   app.get("*", (_req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
