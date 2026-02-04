@@ -1,0 +1,18 @@
+{
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist/public",
+  "routes": [
+    {
+      "src": "/privacy-policy",
+      "dest": "/api/privacy-policy"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
