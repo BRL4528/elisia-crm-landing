@@ -91,100 +91,136 @@ export function generatePrivacyPolicyHtml(baseUrl: string): string {
       <div class="card">
         <div class="card-header">
           <h1>Política de Privacidade</h1>
-          <p>ZMG SOLUTIONS LTDA</p>
+          <p>Elisia CRM – ZMG SOLUTIONS LTDA</p>
+          <p style="margin-top: 0.25rem; font-size: 0.8rem;">Última atualização: 04 de fevereiro de 2026</p>
         </div>
 
         <div class="card-body">
           <section>
-            <p>A presente Política de Privacidade contém informações sobre coleta, uso, armazenamento, tratamento e proteção dos dados pessoais dos usuários e visitantes do site da empresa ZMG SOLUTIONS LTDA, com a finalidade de demonstrar absoluta transparência quanto ao assunto e esclarecer a todos interessados sobre os tipos de dados que são coletados, os motivos da coleta e a forma como os usuários podem gerenciar ou excluir as suas informações pessoais.</p>
-            <p>O presente documento foi elaborado em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei 13.709/18), o Marco Civil da Internet (Lei 12.965/14) (e o Regulamento da UE n. 2016/6790). Ainda, o documento poderá ser atualizado em decorrência de eventual atualização normativa, razão pela qual se convida o usuário a consultar periodicamente esta seção.</p>
+            <p>A ZMG SOLUTIONS LTDA, pessoa jurídica de direito privado, doravante denominada "Elisia CRM", "nós" ou "nosso", respeita a privacidade e a proteção dos dados pessoais de seus usuários, clientes e visitantes, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD) e com as políticas e termos aplicáveis da Meta Platforms, Inc., incluindo o uso da WhatsApp Business API.</p>
+            <p>Esta Política de Privacidade descreve como coletamos, utilizamos, armazenamos, compartilhamos e protegemos os dados pessoais tratados por meio do site https://www.elisiacrm.com e das funcionalidades do Elisia CRM.</p>
           </section>
 
           <section>
-            <h2>2 – SOBRE OS DADOS COLETADOS</h2>
-            <h3>2.1 – DADOS PESSOAIS FORNECIDOS PELO USUÁRIO</h3>
-            <p>Os dados pessoais podem ser coletados diretamente por simples disponibilização a um funcionário do(a) ZMG SOLUTIONS LTDA quando do preenchimento de cadastro ou acordos comerciais, bem, como mediante a interação em nossas plataformas.</p>
-            <h3>2.2 – QUAIS DADOS SÃO COLETADOS</h3>
-            <p>O(a) ZMG SOLUTIONS LTDA coleta informações de modo automático em suas plataformas de interação com o Usuário, tais como: Nome Completo, CPF, E-mail e Telefone; estado civil, local de nascimento, documentos de identificação e CPF, nome da mãe e pai, informações sobre cônjuge, endereço, dados bancários, dados de contrato; dados bancário; informações de renda; endereço de IP e Cookies.</p>
-          </section>
-
-          <section>
-            <h2>3 – PARA QUE FINALIDADES UTILIZAMOS OS DADOS PESSOAIS DO USUÁRIO E VISITANTE?</h2>
-            <p>Os dados pessoais tratados pelo(a) ZMG SOLUTIONS LTDA têm como principais finalidades a possibilidade do Usuário conhecer a oferta de produtos e serviços ZMG SOLUTIONS LTDA, o fornecimento de informações via formulário de contato ou pelo corretor online, identificar os Usuários que navegam no site e manter os dados de Usuários atualizados.</p>
-            <p>Os dados poderão ser utilizados:</p>
+            <h2>1. DADOS PESSOAIS COLETADOS</h2>
+            <p>Os dados pessoais tratados pelo Elisia CRM variam de acordo com a forma de interação do usuário com nossos serviços e podem incluir, entre outros:</p>
+            <h3>1.1 Dados fornecidos diretamente pelo usuário</h3>
             <ul>
-              <li><strong>Bem-estar do usuário e visitante:</strong> aprimorar o produto e/ou serviço oferecido, facilitar, agilizar e cumprir os compromissos estabelecidos entre o usuário e a empresa, melhorar a experiência dos usuários e fornecer funcionalidades específicas a depender das características básicas do usuário.</li>
-              <li><strong>Melhorias da plataforma:</strong> compreender como o usuário utiliza os serviços da plataforma, para ajudar no desenvolvimento de negócios e técnicas.</li>
-              <li><strong>Anúncios:</strong> apresentar anúncios personalizados para o usuário com base nos dados fornecidos.</li>
-              <li><strong>Comercial:</strong> os dados são usados para personalizar o conteúdo oferecido e gerar subsídio à plataforma para a melhora da qualidade no funcionamento dos serviços.</li>
-              <li><strong>Previsão do perfil do usuário:</strong> tratamento automatizados de dados pessoais para avaliar o uso na plataforma.</li>
-              <li><strong>Dados de cadastro:</strong> para permitir o acesso do usuário a determinados conteúdos da plataforma, exclusivo para usuários cadastrados.</li>
-              <li><strong>Dados de contrato:</strong> conferir às partes segurança jurídica e facilitar a conclusão do negócio.</li>
-              <li><strong>Outras</strong></li>
+              <li>Nome completo ou nome empresarial;</li>
+              <li>Número de telefone;</li>
+              <li>Endereço de e-mail;</li>
+              <li>Conteúdo das mensagens enviadas por meio de canais de comunicação integrados, incluindo WhatsApp;</li>
+              <li>Informações fornecidas voluntariamente em formulários, cadastros ou atendimentos.</li>
             </ul>
-            <p>Em alguns casos, poderá tratar seus dados pessoais quando necessários para o cumprimento de obrigação legal ou exercício regular de direitos em processo judicial, administrativo ou arbitral.</p>
-            <p>Além disso, também poderá tratar dados pessoais com base em seu interesse legítimo, sempre no limite de sua expectativa, e nunca em prejuízo de seus interesses, direitos e liberdades fundamentais.</p>
-          </section>
-
-          <section>
-            <h2>4 – COM QUEM OS DADOS SÃO COMPARTILHADOS</h2>
+            <h3>1.2 Dados coletados automaticamente</h3>
             <ul>
-              <li>Com autoridades judiciais, administrativas ou governamentais competentes, sempre que houver determinação legal, requerimento, requisição ou ordem judicial;</li>
-              <li>Com instituições responsáveis por cobrar o crédito decorrente da aquisição da(s) unidade(s) imobiliária(s) que você adquiriu;</li>
-              <li>Com o corretor de imóveis, quando a compra for intermediada;</li>
-              <li>Instituições financeiras de financiamento de imóvel;</li>
-              <li>Com a administradora do condomínio, que prestará os serviços de gestão e administração do empreendimento; e</li>
-              <li>De forma automática, em caso de movimentações societárias, como fusão, aquisição e incorporação.</li>
-              <li>Securitização de recebíveis</li>
+              <li>Endereço IP;</li>
+              <li>Data e hora de acesso;</li>
+              <li>Informações sobre dispositivo, navegador e sistema operacional;</li>
+              <li>Registros de acesso e logs de atividades;</li>
+              <li>Metadados de comunicação (status de envio, entrega e leitura de mensagens, quando aplicável).</li>
             </ul>
           </section>
 
           <section>
-            <h2>5 – POR QUANTO TEMPO OS DADOS PESSOAIS FICAM ARMAZENADOS?</h2>
-            <p>Os dados pessoais do usuário e visitante são armazenados pela plataforma durante o período necessário para a prestação do serviço ou o cumprimento das finalidades previstas no presente documento, conforme o disposto no inciso I do artigo 15 da Lei 13.709/18.</p>
-            <p>Os dados podem ser removidos ou anonimizados a pedido do usuário, excetuando os casos em que a lei oferecer outro tratamento.</p>
-            <p>Ainda, os dados pessoais dos usuários apenas podem ser conservados após o término de seu tratamento nas seguintes hipóteses previstas no artigo 16 da referida lei:</p>
+            <h2>2. FINALIDADE DO TRATAMENTO DOS DADOS</h2>
+            <p>Os dados pessoais são tratados para as seguintes finalidades:</p>
             <ul>
-              <li>I – cumprimento de obrigação legal ou regulatória pelo controlador;</li>
-              <li>II – estudo por órgão de pesquisa, garantida, sempre que possível, a anonimização dos dados pessoais;</li>
-              <li>III – transferência a terceiro, desde que respeitados os requisitos de tratamento de dados dispostos nesta Lei;</li>
-              <li>IV – uso exclusivo do controlador, vedado seu acesso por terceiro, e desde que anonimizados os dados.</li>
+              <li>Viabilizar o funcionamento do Elisia CRM;</li>
+              <li>Realizar atendimentos, comunicações e interações com usuários e clientes;</li>
+              <li>Automatizar fluxos de atendimento e relacionamento;</li>
+              <li>Registrar e organizar históricos de comunicação no CRM;</li>
+              <li>Integrar serviços de mensagens, incluindo a WhatsApp Business API;</li>
+              <li>Melhorar a experiência do usuário e a qualidade dos serviços prestados;</li>
+              <li>Cumprir obrigações legais, regulatórias e contratuais;</li>
+              <li>Garantir a segurança da plataforma e prevenir fraudes.</li>
             </ul>
           </section>
 
           <section>
-            <h2>6 – SEGURANÇA DOS DADOS PESSOAIS ARMAZENADOS</h2>
-            <p>O(a) ZMG SOLUTIONS LTDA se compromete a aplicar as medidas técnicas e organizativas aptas a proteger os dados pessoais de acessos não autorizados e de situações de destruição, perda, alteração, comunicação ou difusão de tais dados.</p>
-            <p>O(a) ZMG SOLUTIONS LTDA não se exime de responsabilidade por culpa exclusiva de terceiro, como em caso de ataque de hackers ou crackers, ou culpa exclusiva do usuário, como no caso em que ele mesmo transfere seus dados a terceiros, comprometendo-se a comunicar o usuário em caso de alguma violação de segurança dos seus dados pessoais.</p>
-            <p>Os dados pessoais armazenados são tratados com confidencialidade, dentro dos limites legais. No entanto, podemos divulgar suas informações pessoais caso sejamos obrigados pela lei para fazê-lo ou se você violar nossos Termos de Serviço.</p>
+            <h2>3. BASE LEGAL PARA O TRATAMENTO</h2>
+            <p>O tratamento de dados pessoais realizado pelo Elisia CRM possui fundamento nas seguintes bases legais previstas na LGPD, conforme aplicável:</p>
+            <ul>
+              <li>Consentimento do titular;</li>
+              <li>Execução de contrato ou de procedimentos preliminares relacionados a contrato;</li>
+              <li>Cumprimento de obrigação legal ou regulatória;</li>
+              <li>Exercício regular de direitos em processo judicial, administrativo ou arbitral;</li>
+              <li>Legítimo interesse, respeitados os direitos e liberdades fundamentais do titular.</li>
+            </ul>
           </section>
 
           <section>
-            <h2>7 – COOKIES OU DADOS DE NAVEGAÇÃO</h2>
-            <p>Os cookies referem-se a arquivos de texto enviados pela plataforma ao computador do usuário e visitante e que nele ficam armazenados, com informações relacionadas à navegação no site.</p>
-            <p>Tais informações são relacionadas aos dados de acesso como local e horário de acesso e são armazenadas pelo navegador do usuário e visitante para que o servidor da plataforma possa lê-las posteriormente a fim de personalizar os serviços da plataforma.</p>
-            <p>O usuário e o visitante do site manifesta conhecer e aceitar que pode ser utilizado um sistema de coleta de dados de navegação mediante à utilização de cookies.</p>
-            <p>O cookie persistente permanece no disco rígido do usuário e visitante depois que o navegador é fechado e será usado pelo navegador em visitas subsequentes ao site. Os cookies persistentes podem ser removidos seguindo as instruções do seu navegador. Já o cookie de sessão é temporário e desaparece depois que o navegador é fechado. É possível redefinir seu navegador da web para recusar todos os cookies, porém alguns recursos da plataforma podem não funcionar corretamente se a capacidade de aceitar cookies estiver desabilitada.</p>
+            <h2>4. TRATAMENTO DE DADOS POR INTEGRAÇÕES COM WHATSAPP (META)</h2>
+            <p>O Elisia CRM utiliza integrações com produtos da Meta Platforms, Inc., incluindo a WhatsApp Business API, para possibilitar comunicações, atendimentos automatizados e gestão de relacionamento com clientes.</p>
+            <p>No contexto dessas integrações, poderão ser tratados os seguintes dados pessoais, conforme disponibilizados pelo próprio titular por meio do WhatsApp:</p>
+            <ul>
+              <li>Número de telefone;</li>
+              <li>Nome e informações do perfil do WhatsApp;</li>
+              <li>Conteúdo das mensagens trocadas;</li>
+              <li>Data, hora e metadados das interações;</li>
+              <li>Identificadores técnicos necessários para a entrega e gestão das mensagens.</li>
+            </ul>
+            <p>Esses dados são utilizados exclusivamente para as finalidades descritas nesta Política.</p>
+            <p>A ZMG SOLUTIONS LTDA atua como controladora independente dos dados pessoais tratados no âmbito do Elisia CRM, em conformidade com a LGPD e com os termos e políticas da Meta.</p>
           </section>
 
           <section>
-            <h2>8 – CONSENTIMENTO</h2>
-            <p>Ao utilizar os serviços e fornecer as informações pessoais na plataforma, o usuário está consentindo com a presente Política de Privacidade.</p>
-            <p>O usuário, ao cadastrar-se, manifesta conhecer e pode exercitar seus direitos de cancelar seu cadastro, acessar e atualizar seus dados pessoais e garante a veracidade das informações por ele disponibilizadas.</p>
-            <p>O usuário tem direito de retirar o seu consentimento a qualquer tempo, para tanto deve entrar em contato com nosso escritório.</p>
+            <h2>5. COMPARTILHAMENTO DE DADOS</h2>
+            <p>Os dados pessoais poderão ser compartilhados nas seguintes hipóteses:</p>
+            <ul>
+              <li>Com a Meta Platforms, Inc., estritamente para viabilizar o uso da WhatsApp Business API;</li>
+              <li>Com fornecedores e prestadores de serviço essenciais para a operação da plataforma, como serviços de hospedagem em nuvem, infraestrutura tecnológica, automação, análise de dados e suporte técnico;</li>
+              <li>Com autoridades públicas, administrativas ou judiciais, quando houver obrigação legal ou determinação competente.</li>
+            </ul>
+            <p>O Elisia CRM não vende, aluga ou comercializa dados pessoais.</p>
           </section>
 
           <section>
-            <h2>9 – ALTERAÇÕES PARA ESSA POLÍTICA DE PRIVACIDADE</h2>
-            <p>Reservamos o direito de modificar essa Política de Privacidade a qualquer momento, então, é recomendável que o usuário e visitante revise-a com frequência.</p>
-            <p>As alterações e esclarecimentos vão surtir efeito imediatamente após sua publicação na plataforma. Quando realizadas alterações os usuários serão notificados. Ao utilizar o serviço ou fornecer informações pessoais após eventuais modificações, o usuário e visitante demonstra sua concordância com as novas normas.</p>
-            <p>Diante da fusão ou venda da plataforma à outra empresa os dados dos usuários podem ser transferidas para os novos proprietários para que a permanência dos serviços oferecidos.</p>
+            <h2>6. ARMAZENAMENTO E RETENÇÃO DOS DADOS</h2>
+            <p>Os dados pessoais serão armazenados em ambientes seguros e controlados, pelo período necessário para cumprir as finalidades para as quais foram coletados, bem como para atender obrigações legais, contratuais ou regulatórias.</p>
+            <p>Após o término da finalidade ou mediante solicitação do titular, os dados poderão ser eliminados ou anonimizados, respeitados os prazos legais aplicáveis.</p>
           </section>
 
           <section>
-            <h2>10 – JURISDIÇÃO PARA RESOLUÇÃO DE CONFLITOS</h2>
-            <p>Para a solução de controvérsias decorrentes do presente instrumento será aplicado integralmente o Direito brasileiro.</p>
-            <p>Os eventuais litígios deverão ser apresentados no foro da comarca em que se encontra a sede da empresa.</p>
+            <h2>7. DIREITOS DOS TITULARES DE DADOS</h2>
+            <p>Nos termos da LGPD, o titular dos dados pessoais poderá, a qualquer momento, solicitar:</p>
+            <ul>
+              <li>Confirmação da existência de tratamento de dados;</li>
+              <li>Acesso aos dados pessoais;</li>
+              <li>Correção de dados incompletos, inexatos ou desatualizados;</li>
+              <li>Anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos;</li>
+              <li>Portabilidade dos dados, quando aplicável;</li>
+              <li>Eliminação dos dados tratados com base no consentimento;</li>
+              <li>Informações sobre compartilhamento de dados;</li>
+              <li>Revogação do consentimento, quando aplicável.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>8. SOLICITAÇÕES E CANAL DE CONTATO</h2>
+            <p>As solicitações relacionadas a dados pessoais poderão ser realizadas por meio do seguinte canal:</p>
+            <p><strong>E-mail:</strong> privacidade@elisiacrm.com</p>
+            <p>As solicitações serão analisadas e respondidas dentro dos prazos previstos em lei.</p>
+          </section>
+
+          <section>
+            <h2>9. SEGURANÇA DA INFORMAÇÃO</h2>
+            <p>O Elisia CRM adota medidas técnicas e organizacionais adequadas para proteger os dados pessoais contra acessos não autorizados, destruição, perda, alteração, comunicação ou difusão indevida, em conformidade com os padrões de segurança da informação e exigências regulatórias aplicáveis.</p>
+          </section>
+
+          <section>
+            <h2>10. TRANSFERÊNCIA INTERNACIONAL DE DADOS</h2>
+            <p>Os dados pessoais poderão ser transferidos e tratados em servidores localizados fora do Brasil, especialmente em razão da utilização de serviços de infraestrutura em nuvem e integrações com fornecedores internacionais, incluindo a Meta Platforms, Inc., sempre observadas as garantias adequadas previstas na LGPD.</p>
+          </section>
+
+          <section>
+            <h2>11. ALTERAÇÕES NESTA POLÍTICA</h2>
+            <p>Esta Política de Privacidade poderá ser atualizada a qualquer momento, visando refletir alterações legais, regulatórias ou operacionais. A versão mais recente estará sempre disponível no site do Elisia CRM.</p>
+          </section>
+
+          <section>
+            <h2>12. DISPOSIÇÕES GERAIS</h2>
+            <p>Ao utilizar os serviços do Elisia CRM, o usuário declara estar ciente e de acordo com os termos desta Política de Privacidade.</p>
           </section>
         </div>
       </div>
