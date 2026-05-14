@@ -1,15 +1,24 @@
-import { jsxLocPlugin } from "@builder.io/vite-plugin-jsx-loc";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import fs from "node:fs";
 import path from "path";
 import { defineConfig } from "vite";
-import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
+// Note: jsxLocPlugin + vitePluginManusRuntime instrument JSX with `loc`
+// metadata for the Manus IDE/runtime. They inject runtime code that crashes
+// inside non-DOM React trees (notably R3F's <Canvas> children), with errors
+// like "Cannot read properties of undefined (reading 'loc')". They have no
+// purpose outside the Manus environment — disabled here.
+const plugins = [react(), tailwindcss()];
 
 export default defineConfig({
   plugins,
+  // Custom cacheDir forces a fresh deps pre-bundle (new chunk hashes).
+  // Browser cannot serve stale `chunk-XXX.js` because the URL changes.
+  cacheDir: "node_modules/.vite-v2",
+  optimizeDeps: {
+    force: true,
+  },
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),

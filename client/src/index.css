@@ -3,11 +3,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ============================================================
+   ELISIA — Dark, premium, neural enterprise palette.
+   Emerald = product identity. Cyan = neural / holographic accent.
+   ============================================================ */
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -27,152 +33,509 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+
+  /* Neural / data tokens */
+  --color-neural: var(--neural);
+  --color-neural-soft: var(--neural-soft);
+  --color-signal: var(--signal);
+  --color-glow: var(--glow);
+
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
 
-:root {
-  --primary: var(--color-green-700);
-  --primary-foreground: var(--color-green-50);
-  --sidebar-primary: var(--color-green-600);
-  --sidebar-primary-foreground: var(--color-green-50);
-  --chart-1: var(--color-green-300);
-  --chart-2: var(--color-green-500);
-  --chart-3: var(--color-green-600);
-  --chart-4: var(--color-green-700);
-  --chart-5: var(--color-green-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
+:root,
 .dark {
-  --primary: var(--color-green-700);
-  --primary-foreground: var(--color-green-50);
-  --sidebar-primary: var(--color-green-500);
-  --sidebar-primary-foreground: var(--color-green-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-green-300);
-  --chart-2: var(--color-green-500);
-  --chart-3: var(--color-green-600);
-  --chart-4: var(--color-green-700);
-  --chart-5: var(--color-green-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --radius: 0.75rem;
+
+  /* Deep enterprise dark — not pure black, slight blue undertone */
+  --background: oklch(0.16 0.012 240);
+  --foreground: oklch(0.94 0.005 240);
+
+  --card: oklch(0.20 0.014 240);
+  --card-foreground: oklch(0.94 0.005 240);
+
+  --popover: oklch(0.19 0.012 240);
+  --popover-foreground: oklch(0.94 0.005 240);
+
+  /* Emerald — product identity */
+  --primary: oklch(0.72 0.18 155);
+  --primary-foreground: oklch(0.12 0.02 155);
+
+  --secondary: oklch(0.24 0.012 240);
+  --secondary-foreground: oklch(0.88 0.005 240);
+
+  --muted: oklch(0.22 0.010 240);
+  --muted-foreground: oklch(0.62 0.012 240);
+
+  --accent: oklch(0.26 0.014 240);
+  --accent-foreground: oklch(0.95 0.005 240);
+
+  --destructive: oklch(0.62 0.22 22);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.72 0.18 155 / 60%);
+
+  /* Neural / signal — cyan family, used sparingly */
+  --neural: oklch(0.84 0.13 200);
+  --neural-soft: oklch(0.84 0.13 200 / 0.18);
+  --signal: oklch(0.92 0.10 195);
+  --glow: oklch(0.78 0.16 165);
+
+  --chart-1: oklch(0.72 0.18 155);
+  --chart-2: oklch(0.78 0.14 175);
+  --chart-3: oklch(0.84 0.13 200);
+  --chart-4: oklch(0.66 0.16 145);
+  --chart-5: oklch(0.58 0.14 135);
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+  *,
+  *::before,
+  *::after {
+    @apply border-border;
   }
+
+  html {
+    color-scheme: dark;
+    background: var(--background);
+  }
+
+  html,
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: 'ss01', 'cv11', 'cv02';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Lenis hooks — wrapper takes over scroll */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: clip;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--primary) 35%, transparent);
+    color: var(--foreground);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
+  a[href] {
     @apply cursor-pointer;
   }
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
   }
-
-  .flex {
-    min-height: 0;
-    min-width: 0;
-  }
-
   @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
-    }
+    .container { padding-inline: 1.5rem; }
+  }
+  @media (min-width: 1024px) {
+    .container { padding-inline: 2.5rem; max-width: 1320px; }
   }
 
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
-    }
+  /* Display typography — geometric, tight, premium */
+  .display {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 0.98;
+  }
+
+  .mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-feature-settings: 'zero', 'ss01';
+  }
+
+  /* Glass surface — the recurring "holographic panel" treatment */
+  .glass {
+    background: linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--card) 70%, transparent),
+      color-mix(in oklab, var(--card) 55%, transparent)
+    );
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid color-mix(in oklab, var(--neural) 12%, var(--border));
+    box-shadow:
+      0 1px 0 0 color-mix(in oklab, white 6%, transparent) inset,
+      0 30px 80px -40px color-mix(in oklab, var(--neural) 30%, black);
+  }
+
+  .glass-strong {
+    background: linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--card) 88%, transparent),
+      color-mix(in oklab, var(--card) 72%, transparent)
+    );
+    backdrop-filter: blur(22px) saturate(150%);
+    -webkit-backdrop-filter: blur(22px) saturate(150%);
+    border: 1px solid color-mix(in oklab, var(--neural) 18%, var(--border));
+    box-shadow:
+      0 1px 0 0 color-mix(in oklab, white 8%, transparent) inset,
+      0 40px 120px -50px color-mix(in oklab, var(--primary) 45%, black);
+  }
+
+  /* Neural ring — emerald → cyan gradient border for accent surfaces */
+  .ring-neural {
+    position: relative;
+    isolation: isolate;
+  }
+  .ring-neural::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg,
+      color-mix(in oklab, var(--primary) 80%, transparent),
+      color-mix(in oklab, var(--neural) 55%, transparent) 60%,
+      transparent
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Grid backdrop — the recurring fine-line plane */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, color-mix(in oklab, var(--neural) 8%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, var(--neural) 8%, transparent) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+
+  /* Eyebrow label */
+  .eyebrow {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: color-mix(in oklab, var(--neural) 80%, var(--foreground));
+  }
+
+  /* Subtle text gradient for headlines */
+  .text-display-gradient {
+    background: linear-gradient(180deg,
+      var(--foreground) 0%,
+      color-mix(in oklab, var(--foreground) 80%, transparent) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-accent-gradient {
+    background: linear-gradient(110deg,
+      var(--primary) 0%,
+      var(--neural) 50%,
+      var(--glow) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Persistent WebGL canvas layer */
+  .scene-layer {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    isolation: isolate;
+  }
+
+  /* Soft ambient glow — restrained, no per-particle bloom inflation */
+  .scene-bloom {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse 30% 22% at 50% 55%, rgba(52, 211, 153, 0.035), transparent 70%);
+    mix-blend-mode: screen;
+  }
+
+  /* Cinematic vignette */
+  .scene-vignette {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 45%,
+      rgba(11, 20, 24, 0.70) 100%
+    );
+  }
+
+  /* Subtle film grain — breaks banding on gradients */
+  .scene-grain {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  /* Sections sit on top of the scene */
+  .page-shell {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Sentinel — invisible scroll anchors that drive scene phases */
+  .phase-sentinel {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  /* Soft, slow ambient pulse for live indicators */
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 0.55; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.08); }
+  }
+  .pulse-dot {
+    animation: pulse-soft 2.4s ease-in-out infinite;
+  }
+
+  /* Shimmer for data-loading-feel inside panels */
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  .shimmer {
+    background: linear-gradient(90deg,
+      transparent 0%,
+      color-mix(in oklab, var(--neural) 30%, transparent) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2.6s ease-in-out infinite;
+  }
+
+  /* Marquee for ticker rows */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .marquee-track {
+    animation: marquee 38s linear infinite;
+  }
+
+  /* Glow ember underline for hovered nav links */
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 100%; bottom: -6px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--primary), var(--neural));
+    transition: right 320ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .nav-link:hover::after { right: 0; }
+
+  /* Cinematic vignette for hero/horizon */
+  .vignette::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse at center, transparent 55%, color-mix(in oklab, var(--background) 80%, transparent) 100%);
+  }
+
+  /* ============================================================
+     CUSTOM CURSOR — cinematic dot + ring
+     ============================================================ */
+
+  html.cursor-hidden,
+  html.cursor-hidden body,
+  html.cursor-hidden * {
+    cursor: none !important;
+  }
+
+  /* Outer ring — slow trail */
+  .cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    border: 1px solid color-mix(in oklab, var(--neural) 60%, white);
+    background: transparent;
+    pointer-events: none;
+    z-index: 999998;
+    opacity: 0;
+    mix-blend-mode: difference;
+    will-change: transform, width, height, background, border-color;
+    transition:
+      width 360ms cubic-bezier(0.22, 1, 0.36, 1),
+      height 360ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 280ms ease-out,
+      background-color 280ms ease-out,
+      border-width 280ms ease-out,
+      opacity 200ms ease-out;
+  }
+
+  /* Inner dot — laser pointer */
+  .cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background: color-mix(in oklab, var(--primary) 75%, white 25%);
+    pointer-events: none;
+    z-index: 999999;
+    opacity: 0;
+    mix-blend-mode: difference;
+    will-change: transform, width, height, background;
+    transition:
+      width 220ms cubic-bezier(0.22, 1, 0.36, 1),
+      height 220ms cubic-bezier(0.22, 1, 0.36, 1),
+      background-color 220ms ease-out,
+      opacity 200ms ease-out;
+  }
+
+  /* Variants */
+  .cursor-ring[data-variant="link"] {
+    width: 54px;
+    height: 54px;
+    border-color: color-mix(in oklab, var(--primary) 90%, white);
+    background: color-mix(in oklab, var(--primary) 5%, transparent);
+  }
+  .cursor-dot[data-variant="link"] {
+    width: 3px;
+    height: 3px;
+  }
+
+  .cursor-ring[data-variant="cta"] {
+    width: 70px;
+    height: 70px;
+    border-color: transparent;
+    background: color-mix(in oklab, var(--primary) 22%, transparent);
+    box-shadow:
+      0 0 32px -4px color-mix(in oklab, var(--primary) 60%, transparent),
+      inset 0 0 18px -4px color-mix(in oklab, var(--neural) 50%, transparent);
+  }
+  .cursor-dot[data-variant="cta"] {
+    width: 6px;
+    height: 6px;
+    background: color-mix(in oklab, var(--neural) 70%, white);
+  }
+
+  .cursor-ring[data-variant="panel"] {
+    width: 48px;
+    height: 48px;
+    border-color: color-mix(in oklab, var(--neural) 90%, white);
+    border-width: 1px;
+    background: transparent;
+  }
+
+  .cursor-ring[data-variant="scene"] {
+    width: 92px;
+    height: 92px;
+    border-color: color-mix(in oklab, var(--neural) 35%, transparent);
+    background: color-mix(in oklab, var(--neural) 4%, transparent);
+  }
+
+  /* Pressed compression — gives tactile click feedback */
+  .cursor-ring[data-pressed] {
+    transform-origin: center;
+    transition:
+      width 120ms ease-out,
+      height 120ms ease-out,
+      border-color 120ms ease-out;
+    border-color: color-mix(in oklab, var(--primary) 100%, white);
+  }
+  .cursor-dot[data-pressed] {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Hinted label that floats under the ring on data-cursor-label */
+  .cursor-label {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999998;
+    opacity: 0;
+    transform: translate(-50%, 0);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: color-mix(in oklab, var(--neural) 85%, white);
+    background: color-mix(in oklab, var(--background) 80%, transparent);
+    backdrop-filter: blur(8px);
+    border: 1px solid color-mix(in oklab, var(--neural) 22%, var(--border));
+    border-radius: 999px;
+    padding: 4px 10px;
+    white-space: nowrap;
+    transition: opacity 260ms ease-out;
+  }
+  .cursor-label[data-visible] {
+    opacity: 1;
+  }
+
+  /* Toast/sonner */
+  [data-sonner-toaster] {
+    position: fixed !important;
+    z-index: 999999 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }
