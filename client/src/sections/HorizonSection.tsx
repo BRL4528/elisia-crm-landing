@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { SectionShell } from "@/components/SectionShell";
 import { Eyebrow } from "@/components/Eyebrow";
 import { CTAButton } from "@/components/CTAButton";
+import { ElisiaForm } from "@/components/ElisiaForm";
 import { fadeUp, stagger } from "@/lib/motion/easings";
 
 export function HorizonSection() {
@@ -51,6 +52,16 @@ export function HorizonSection() {
             <CTAButton href="https://app.elisiacrm.com/sign-in" variant="ghost" hint="Entrar">
               Acessar plataforma
             </CTAButton>
+          </motion.div>
+
+          <motion.div
+            variants={fadeUp}
+            className="mt-14 mx-auto w-full max-w-md rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 text-left backdrop-blur-sm"
+          >
+            <ElisiaForm
+              formId="71dcd255-31d6-40b2-b9f9-012ccd8d9ce3"
+              formToken="90ee6394-eff3-4106-b1de-10bf3407b469"
+            />
           </motion.div>
 
           <motion.div

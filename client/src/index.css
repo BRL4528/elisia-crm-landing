@@ -539,3 +539,115 @@
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ============================================================
+   Embed do formulário Elisia/Samasc (form.js).
+   O form.js só cria a marcação (.elisia-form, .elisia-form-field,
+   label, input, button) e NÃO injeta CSS — cabe ao site hospedeiro
+   estilizar. Escopamos tudo em .elisia-form-embed para não vazar
+   e harmonizamos com o tema escuro da landing.
+   ============================================================ */
+.elisia-form-embed .elisia-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.elisia-form-embed .elisia-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.elisia-form-embed .elisia-form-field label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: rgba(244, 246, 245, 0.75);
+}
+
+.elisia-form-embed input,
+.elisia-form-embed textarea,
+.elisia-form-embed select {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: rgb(244, 246, 245);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.6rem;
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.elisia-form-embed input::placeholder,
+.elisia-form-embed textarea::placeholder {
+  color: rgba(244, 246, 245, 0.35);
+}
+
+.elisia-form-embed input:focus,
+.elisia-form-embed textarea:focus,
+.elisia-form-embed select:focus {
+  border-color: rgba(94, 234, 212, 0.55);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.elisia-form-embed textarea {
+  min-height: 5rem;
+  resize: vertical;
+}
+
+/* Grupos radio/checkbox: opções empilhadas, cada uma em linha */
+.elisia-form-embed .elisia-form-field > div label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+  color: rgba(244, 246, 245, 0.85);
+  cursor: pointer;
+}
+
+.elisia-form-embed .elisia-form-field input[type="radio"],
+.elisia-form-embed .elisia-form-field input[type="checkbox"] {
+  width: auto;
+  accent-color: rgb(52, 211, 153);
+}
+
+.elisia-form-embed .elisia-form-errors {
+  font-size: 0.8rem;
+  color: rgb(248, 113, 113);
+}
+
+.elisia-form-embed button[type="submit"] {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: rgb(6, 46, 37);
+  background: linear-gradient(
+    to right,
+    rgb(110, 231, 183),
+    rgb(52, 211, 153),
+    rgb(34, 211, 238)
+  );
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition:
+    box-shadow 0.3s ease,
+    opacity 0.2s ease;
+}
+
+.elisia-form-embed button[type="submit"]:hover {
+  box-shadow: 0 0 28px -6px rgba(94, 234, 212, 0.65);
+}
+
+.elisia-form-embed button[type="submit"]:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
