@@ -594,7 +594,7 @@ html[data-page="landing"] {
 .lp .mini-cal .dh {
   font-size: 10px;
   font-weight: 650;
-  color: var(--lp-muted-2);
+  color: var(--lp-muted);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -868,7 +868,7 @@ html[data-page="landing"] {
   border: 1px solid var(--lp-line-2);
   border-radius: 9px;
 }
-.lp .form-host .elisia-form-embed :is(input, textarea)::placeholder { color: var(--lp-muted-2); }
+.lp .form-host .elisia-form-embed :is(input, textarea)::placeholder { color: var(--lp-muted); }
 .lp .form-host .elisia-form-embed :is(input, textarea, select):focus {
   border-color: var(--lp-green);
   background: #fff;
