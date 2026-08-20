@@ -91,7 +91,13 @@ export function Pricing() {
               <span className="per">/mês</span>
             </div>
             <div className="billed">
-              {cycle.save ? <b>{cycle.billed}</b> : cycle.billed}
+              {cycle.billedAmount ? (
+                <>
+                  <b className="mono">{cycle.billedAmount}</b> {cycle.billed}
+                </>
+              ) : (
+                cycle.billed
+              )}
               {cycle.save ? (
                 <>
                   <br />

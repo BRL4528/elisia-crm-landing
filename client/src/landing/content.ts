@@ -26,6 +26,9 @@ export interface Cycle {
   off?: string;
   /** Preço mensal equivalente do plano Profissional. */
   price: string;
+  /** Valor total do ciclo — destacado em negrito, como no design. */
+  billedAmount?: string;
+  /** Restante da frase de cobrança. */
   billed: string;
   save?: string;
   tag: string;
@@ -46,7 +49,8 @@ export const CYCLES: Cycle[] = [
     label: "Semestral",
     off: "−16%",
     price: "134,90",
-    billed: "R$ 809,40 a cada 6 meses",
+    billedAmount: "R$ 809,40",
+    billed: "a cada 6 meses",
     save: "economize R$ 150,00",
     tag: "Mais escolhido",
     promo: false,
@@ -56,7 +60,8 @@ export const CYCLES: Cycle[] = [
     label: "Anual",
     off: "−31%",
     price: "109,90",
-    billed: "R$ 1.318,80 a cada 12 meses",
+    billedAmount: "R$ 1.318,80",
+    billed: "a cada 12 meses",
     save: "economize R$ 600,00 por ano",
     tag: "Super promoção",
     promo: true,
