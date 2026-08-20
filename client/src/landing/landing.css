@@ -11,7 +11,7 @@
   --lp-card: #ffffff;
   --lp-ink: #0c1512;
   --lp-ink-2: #3d4b45;
-  --lp-muted: #6d7c75;
+  --lp-muted: #64736c;
   --lp-muted-2: #94a29b;
   --lp-line: #e3eae6;
   --lp-line-2: #d3ddd8;
@@ -73,7 +73,7 @@ html[data-page="landing"] {
 .lp a:hover { color: var(--lp-green-dd); }
 .lp img,
 .lp svg { display: block; }
-.lp ::selection { background: rgba(34, 197, 94, 0.22); }
+.lp ::selection { background: rgba(34, 197, 94, 0.22); color: var(--lp-ink); }
 
 .lp :is(a, button, summary):focus-visible {
   outline: 2px solid var(--lp-green-d);
@@ -544,7 +544,7 @@ html[data-page="landing"] {
   color: var(--lp-green-d);
   margin-bottom: 4px;
 }
-.lp .msg .t { font-size: 10.5px; color: var(--lp-muted-2); margin-top: 5px; text-align: right; }
+.lp .msg .t { font-size: 10.5px; color: var(--lp-muted); margin-top: 5px; text-align: right; }
 .lp .hand {
   display: flex;
   align-items: center;
@@ -717,6 +717,7 @@ html[data-page="landing"] {
   line-height: 1.3;
 }
 .lp .promo svg { flex: none; }
+.lp .promo[hidden] { display: none; }
 .lp .tier .btn { width: 100%; margin: 18px 0 22px; }
 .lp .feats-l {
   list-style: none;
@@ -730,7 +731,7 @@ html[data-page="landing"] {
 }
 .lp .feats-l li { display: flex; gap: 9px; font-size: 13.5px; color: var(--lp-ink-2); line-height: 1.45; }
 .lp .feats-l svg { flex: none; margin-top: 3px; color: var(--lp-green); }
-.lp .feats-l .h { font-size: 12px; font-weight: 650; letter-spacing: 0.05em; text-transform: uppercase; color: var(--lp-muted-2); }
+.lp .feats-l .h { font-size: 12px; font-weight: 650; letter-spacing: 0.05em; text-transform: uppercase; color: var(--lp-muted); }
 .lp .feats-l .m { color: var(--lp-muted); }
 .lp .pay {
   display: flex;
@@ -779,7 +780,7 @@ html[data-page="landing"] {
 }
 .lp .cmp-t .hi { background: var(--lp-green-tint-2); }
 .lp .cmp-t .yes { color: var(--lp-green-d); font-weight: 650; }
-.lp .cmp-t .no { color: var(--lp-muted-2); }
+.lp .cmp-t .no { color: var(--lp-muted); }
 .lp details.cmp { margin-top: 26px; }
 .lp details.cmp > summary {
   list-style: none;
@@ -857,6 +858,37 @@ html[data-page="landing"] {
 }
 .lp .form-host label { color: var(--lp-ink-2); }
 
+/* O index.css estiliza .elisia-form-embed para o tema escuro da experiencia
+   imersiva. Na landing clara esses valores precisam ser revertidos — daí a
+   especificidade extra (.lp .form-host .elisia-form-embed). */
+.lp .form-host .elisia-form-embed .elisia-form-field label { color: var(--lp-ink-2); }
+.lp .form-host .elisia-form-embed :is(input, textarea, select) {
+  color: var(--lp-ink);
+  background: #fff;
+  border: 1px solid var(--lp-line-2);
+  border-radius: 9px;
+}
+.lp .form-host .elisia-form-embed :is(input, textarea)::placeholder { color: var(--lp-muted-2); }
+.lp .form-host .elisia-form-embed :is(input, textarea, select):focus {
+  border-color: var(--lp-green);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.16);
+}
+.lp .form-host .elisia-form-embed button[type="submit"] {
+  width: 100%;
+  font-family: var(--lp-font);
+  font-size: 14px;
+  font-weight: 550;
+  color: #fff;
+  background: var(--lp-green-d);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 12px 18px;
+  box-shadow: 0 1px 2px rgba(13, 63, 34, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+.lp .form-host .elisia-form-embed button[type="submit"]:hover { background: #116a33; }
+.lp .form-host .elisia-form-embed .elisia-form-errors { color: #b42318; font-size: 12.5px; }
+
 /* ── cta final ──────────────────────────────────────────────────────────── */
 .lp .cta-band {
   background: var(--lp-ink-dark);
@@ -881,7 +913,7 @@ html[data-page="landing"] {
   font-weight: 650;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--lp-muted-2);
+  color: var(--lp-muted);
   margin-bottom: 14px;
 }
 .lp .f-grid a,
@@ -898,7 +930,7 @@ html[data-page="landing"] {
   margin-top: 40px;
   padding-top: 24px;
   font-size: 12.5px;
-  color: var(--lp-muted-2);
+  color: var(--lp-muted);
 }
 .lp .f-bot .sep { color: var(--lp-line-2); }
 .lp .f-legacy {
