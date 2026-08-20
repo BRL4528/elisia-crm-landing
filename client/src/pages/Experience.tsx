@@ -49,7 +49,7 @@ function PageBody() {
   );
 }
 
-export default function Home() {
+export default function Experience() {
   useEffect(() => {
     document.documentElement.classList.add("dark");
   }, []);
