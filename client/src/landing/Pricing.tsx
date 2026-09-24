@@ -47,13 +47,13 @@ export function Pricing() {
             <div className="tier-top">
               <span className="tier-n">Básico</span>
             </div>
-            <p className="tier-for">Para organizar contatos e o funil sem pagar nada.</p>
+            <p className="tier-for">Para conhecer funil, contatos e agenda antes de escolher.</p>
             <div className="price">
               <span className="v">Grátis</span>
             </div>
-            <div className="billed">Sem cobrança, para sempre</div>
+            <div className="billed">Por 14 dias · depois, escolha um plano</div>
             <a className="btn btn-g" href={LINKS.signUp}>
-              Criar conta grátis
+              Testar 14 dias grátis
             </a>
             <ul className="feats-l">
               <li>

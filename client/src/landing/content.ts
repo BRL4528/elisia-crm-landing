@@ -138,13 +138,13 @@ export const STATS = [
   { v: "1 lugar", l: "Conversas, contatos, agenda e propostas sem trocar de aba" },
   { v: "24h", l: "O agente de IA responde e qualifica fora do horário comercial" },
   { v: "14 dias", l: "Teste completo, sem cartão e sem contrato" },
-  { v: "R$ 0", l: "Plano Básico gratuito para sempre, com 3 usuários" },
+  { v: "R$ 0", l: "Durante os 14 dias de teste, com 3 usuários incluídos" },
 ];
 
 export const FAQ = [
   {
     q: "Como funciona o teste de 14 dias?",
-    a: "Você cria a conta e usa o plano Profissional completo por 14 dias, sem cartão de crédito. No fim do período, escolhe um plano pago ou continua no Básico gratuito — nada é cobrado automaticamente.",
+    a: "Você cria a conta e usa o plano Profissional completo por 14 dias, sem cartão de crédito. No fim do período, escolhe o plano pago para continuar — nada é cobrado automaticamente.",
   },
   {
     q: "Preciso do WhatsApp oficial?",

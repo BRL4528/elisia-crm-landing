@@ -15,7 +15,7 @@ export function CtaBand() {
               Agendar demonstração
             </a>
           </div>
-          <p className="fine">Sem cartão de crédito · Plano Básico gratuito para sempre</p>
+          <p className="fine">Sem cartão de crédito · Cancele quando quiser</p>
         </div>
       </div>
     </section>
