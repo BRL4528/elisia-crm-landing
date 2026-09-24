@@ -26,7 +26,7 @@ export function Contact() {
             <span className="eyebrow">Fale com a gente</span>
             <h2 className="h2">Vamos colocar seu time para vender mais</h2>
             <p className="lead">
-              Conta o que você precisa que respondemos rápido — nosso time ou o próprio agente de
+              Conta o que você precisa que respondemos rápido. Nosso time ou o próprio agente de
               IA da ElisiaCRM te atendem por aqui.
             </p>
             <div className="contact-ways">

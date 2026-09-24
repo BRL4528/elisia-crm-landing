@@ -12,7 +12,7 @@ export function Faq() {
               Antes de começar
             </h2>
             <p className="lead" style={{ fontSize: "15.5px" }}>
-              Se ficou alguma dúvida, fale com a gente pelo WhatsApp — quem responde é o time que
+              Se ficou alguma dúvida, fale com a gente pelo WhatsApp. Quem responde é o time que
               usa o produto todo dia.
             </p>
             <a className="btn btn-g" href="#contato" style={{ marginTop: 22 }}>

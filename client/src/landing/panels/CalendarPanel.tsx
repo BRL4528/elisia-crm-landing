@@ -57,7 +57,7 @@ export function CalendarPanel() {
         <div className="hand" style={{ borderStyle: "solid", background: "#fff" }}>
           <Clock size={15} strokeWidth={2.2} aria-hidden />
           <span>
-            <b>Amanhã, 9h</b> · Check-up — Clínica Vitalis · Marina
+            <b>Amanhã, 9h</b> · Check-up · Clínica Vitalis · Marina
           </span>
         </div>
       </div>

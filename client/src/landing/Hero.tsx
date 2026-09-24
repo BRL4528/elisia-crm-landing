@@ -21,7 +21,7 @@ export function Hero() {
               O CRM que <em>atende, vende</em> e acompanha por você
             </h1>
             <p className="hero-s">
-              Todos os contatos, conversas e negócios da sua empresa em um só lugar — com um
+              Todos os contatos, conversas e negócios da sua empresa em um só lugar, com um
               agente de IA que responde, agenda e registra tudo no funil.
             </p>
             <div className="hero-a">

@@ -99,7 +99,7 @@ export const FEATURES: Feature[] = [
   {
     icon: "flow",
     title: "Automações",
-    body: "Monte fluxos visuais: mensagem enviada, tarefa criada, etapa mudada — sem depender de TI.",
+    body: "Monte fluxos visuais: mensagem enviada, tarefa criada, etapa mudada, sem depender de TI.",
     tag: "Sem código",
   },
   {
@@ -144,7 +144,7 @@ export const STATS = [
 export const FAQ = [
   {
     q: "Como funciona o teste de 14 dias?",
-    a: "Você cria a conta e usa o plano Profissional completo por 14 dias, sem cartão de crédito. No fim do período, escolhe o plano pago para continuar — nada é cobrado automaticamente.",
+    a: "Você cria a conta e usa o plano Profissional completo por 14 dias, sem cartão de crédito. No fim do período, escolhe o plano pago para continuar. Nada é cobrado automaticamente.",
   },
   {
     q: "Preciso do WhatsApp oficial?",
