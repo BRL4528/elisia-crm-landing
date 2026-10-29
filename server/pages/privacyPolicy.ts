@@ -95,12 +95,12 @@ export function generatePrivacyPolicyHtml(baseUrl: string): string {
         <div class="card-header">
           <h1>Política de Privacidade</h1>
           <p>Elisia CRM – ZMG SOLUTIONS LTDA</p>
-          <p style="margin-top: 0.25rem; font-size: 0.8rem;">Última atualização: 04 de fevereiro de 2026</p>
+          <p style="margin-top: 0.25rem; font-size: 0.8rem;">Última atualização: 29 de outubro de 2026</p>
         </div>
 
         <div class="card-body">
           <section>
-            <p>A ZMG SOLUTIONS LTDA, pessoa jurídica de direito privado, doravante denominada "Elisia CRM", "nós" ou "nosso", respeita a privacidade e a proteção dos dados pessoais de seus usuários, clientes e visitantes, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD) e com as políticas e termos aplicáveis da Meta Platforms, Inc., incluindo o uso da WhatsApp Business API.</p>
+            <p>A ZMG SOLUTIONS LTDA, pessoa jurídica de direito privado, doravante denominada "Elisia CRM", "nós" ou "nosso", respeita a privacidade e a proteção dos dados pessoais de seus usuários, clientes e visitantes, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD), com as políticas e termos aplicáveis da Meta Platforms, Inc., incluindo o uso da WhatsApp Business API, e com a Política de Dados do Usuário dos Serviços de API do Google.</p>
             <p>Esta Política de Privacidade descreve como coletamos, utilizamos, armazenamos, compartilhamos e protegemos os dados pessoais tratados por meio do site https://www.elisiacrm.com e das funcionalidades do Elisia CRM.</p>
           </section>
 
@@ -168,24 +168,63 @@ export function generatePrivacyPolicyHtml(baseUrl: string): string {
           </section>
 
           <section>
-            <h2>5. COMPARTILHAMENTO DE DADOS</h2>
+            <h2>5. DADOS DE CONTAS GOOGLE (GOOGLE AGENDA E GMAIL)</h2>
+            <p>O usuário pode conectar a própria conta Google ao Elisia CRM. A conexão é opcional, feita pelo próprio usuário na tela de Integrações, e só acontece depois que ele autoriza o acesso na tela de consentimento do Google.</p>
+            <h3>5.1 Dados acessados</h3>
+            <ul>
+              <li><strong>Perfil básico</strong> (escopos <code>openid</code>, <code>userinfo.email</code> e <code>userinfo.profile</code>): nome, endereço de e-mail e foto da conta Google, usados para identificar qual conta foi conectada.</li>
+              <li><strong>Google Agenda</strong> (escopo <code>calendar.events</code>): leitura dos eventos da agenda principal do usuário (título, data e horário, descrição, local e participantes), para mostrá-los na agenda do Elisia CRM, para o assistente de IA responder perguntas do usuário sobre a própria agenda e para calcular horários livres; criação de eventos a partir das tarefas e reuniões agendadas no Elisia CRM; e alteração ou exclusão de eventos feitas pelo próprio usuário na agenda do Elisia CRM. Os eventos lidos não são copiados para o banco de dados do Elisia CRM: são consultados no Google quando necessário.</li>
+              <li><strong>Gmail</strong> (escopo <code>gmail.send</code>): permissão apenas para <strong>enviar</strong> e-mails em nome do usuário. O Elisia CRM não lê, não lista e não apaga mensagens da caixa de entrada do usuário.</li>
+            </ul>
+            <h3>5.2 Como usamos esses dados</h3>
+            <ul>
+              <li>Os e-mails são enviados somente depois que o usuário revisa o rascunho e confirma o envio. Eles saem do endereço do próprio usuário e ficam na pasta de enviados da conta Google dele.</li>
+              <li>Destinatário, assunto, corpo, anexos e data dos e-mails enviados ficam registrados no Elisia CRM, ligados ao cliente, à oportunidade ou à tarefa correspondente, para o histórico do atendimento.</li>
+              <li>As reuniões marcadas pelo agente de atendimento ficam registradas no CRM junto do cliente ou da oportunidade.</li>
+              <li>Quando o usuário pede, o assistente de inteligência artificial do Elisia CRM (Elisia Assistant) redige e-mails, consulta a agenda e sugere horários. Para isso ele processa apenas as informações necessárias para aquela tarefa (por exemplo, os eventos e os horários livres da agenda) por meio de provedores de IA contratados (atualmente a Anthropic), que não usam esses dados para treinar modelos.</li>
+              <li>Se a empresa do usuário ativar o agendamento de reuniões pelo agente de atendimento (por exemplo, no WhatsApp) e incluir o usuário entre os responsáveis pelas reuniões, o agente consulta os horários ocupados da agenda Google do usuário para calcular os horários livres. Apenas os horários livres, nunca o título ou o conteúdo dos eventos, são enviados ao provedor de IA e oferecidos ao cliente na conversa. Quando o cliente confirma, o agente cria o evento na agenda do usuário com o nome, o telefone e o assunto informados pelo cliente.</li>
+            </ul>
+            <h3>5.3 O que não fazemos</h3>
+            <ul>
+              <li>Não vendemos dados recebidos das APIs do Google.</li>
+              <li>Não usamos esses dados para publicidade, incluindo anúncios personalizados ou redirecionados.</li>
+              <li>Não usamos esses dados para avaliar crédito ou para concessão de empréstimos.</li>
+              <li>Não usamos esses dados para desenvolver, melhorar ou treinar modelos generalizados de inteligência artificial ou de aprendizado de máquina, nossos ou de terceiros.</li>
+              <li>Pessoas da nossa equipe não leem esses dados, exceto com autorização expressa do usuário para um caso específico, quando necessário por segurança (por exemplo, investigar abuso), para cumprir a lei, ou quando os dados forem agregados e anonimizados para operações internas.</li>
+            </ul>
+            <h3>5.4 Armazenamento, compartilhamento e exclusão</h3>
+            <ul>
+              <li>Os tokens de acesso fornecidos pelo Google são armazenados criptografados e usados apenas para executar as ações autorizadas pelo usuário.</li>
+              <li>Dados recebidos das APIs do Google são compartilhados apenas com prestadores de serviço necessários para operar essas funcionalidades (hospedagem, infraestrutura e os provedores de IA indicados na seção 5.2), sob obrigação de confidencialidade, ou quando exigido por lei. Os horários livres calculados a partir da agenda são mostrados aos clientes da empresa apenas no agendamento pelo agente de atendimento (seção 5.2).</li>
+              <li>O usuário pode desconectar a conta Google a qualquer momento na tela de Integrações do Elisia CRM ou em <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">myaccount.google.com/permissions</a>. Ao desconectar pelo Elisia CRM, o acesso é revogado no Google e os tokens são apagados. Se o acesso for removido diretamente na conta Google, os tokens guardados deixam de funcionar imediatamente.</li>
+              <li>Depois de desconectar, o Elisia CRM deixa de acessar a conta Google. O endereço da conta conectada e os registros de e-mails enviados e de reuniões criadas continuam no histórico do CRM da empresa enquanto a conta da empresa estiver ativa, e são apagados quando a empresa encerra a conta ou em até 30 dias após pedido do usuário pelo e-mail privacidade@elisiacrm.com.</li>
+            </ul>
+            <h3>5.5 Uso limitado</h3>
+            <p>O uso e a transferência, para qualquer outro aplicativo, de informações recebidas das APIs do Google pelo Elisia CRM obedecem à <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+          </section>
+
+          <section>
+            <h2>6. COMPARTILHAMENTO DE DADOS</h2>
             <p>Os dados pessoais poderão ser compartilhados nas seguintes hipóteses:</p>
             <ul>
               <li>Com a Meta Platforms, Inc., estritamente para viabilizar o uso da WhatsApp Business API;</li>
-              <li>Com fornecedores e prestadores de serviço essenciais para a operação da plataforma, como serviços de hospedagem em nuvem, infraestrutura tecnológica, automação, análise de dados e suporte técnico;</li>
+              <li>Com o Google, estritamente para executar as ações que o usuário autorizou ao conectar a conta Google (seção 5);</li>
+              <li>Com fornecedores e prestadores de serviço essenciais para a operação da plataforma, como serviços de hospedagem em nuvem, infraestrutura tecnológica, provedores de inteligência artificial, automação, análise de dados e suporte técnico;</li>
               <li>Com autoridades públicas, administrativas ou judiciais, quando houver obrigação legal ou determinação competente.</li>
             </ul>
             <p>O Elisia CRM não vende, aluga ou comercializa dados pessoais.</p>
+            <p>Dados recebidos das APIs do Google seguem exclusivamente as regras da seção 5: não são compartilhados com serviços de análise de dados, publicidade ou outros terceiros além dos indicados na seção 5.4.</p>
           </section>
 
           <section>
-            <h2>6. ARMAZENAMENTO E RETENÇÃO DOS DADOS</h2>
+            <h2>7. ARMAZENAMENTO E RETENÇÃO DOS DADOS</h2>
             <p>Os dados pessoais serão armazenados em ambientes seguros e controlados, pelo período necessário para cumprir as finalidades para as quais foram coletados, bem como para atender obrigações legais, contratuais ou regulatórias.</p>
             <p>Após o término da finalidade ou mediante solicitação do titular, os dados poderão ser eliminados ou anonimizados, respeitados os prazos legais aplicáveis.</p>
+            <p>A retenção de dados recebidos das APIs do Google segue a seção 5.4.</p>
           </section>
 
           <section>
-            <h2>7. DIREITOS DOS TITULARES DE DADOS</h2>
+            <h2>8. DIREITOS DOS TITULARES DE DADOS</h2>
             <p>Nos termos da LGPD, o titular dos dados pessoais poderá, a qualquer momento, solicitar:</p>
             <ul>
               <li>Confirmação da existência de tratamento de dados;</li>
@@ -200,29 +239,29 @@ export function generatePrivacyPolicyHtml(baseUrl: string): string {
           </section>
 
           <section>
-            <h2>8. SOLICITAÇÕES E CANAL DE CONTATO</h2>
+            <h2>9. SOLICITAÇÕES E CANAL DE CONTATO</h2>
             <p>As solicitações relacionadas a dados pessoais poderão ser realizadas por meio do seguinte canal:</p>
             <p><strong>E-mail:</strong> privacidade@elisiacrm.com</p>
             <p>As solicitações serão analisadas e respondidas dentro dos prazos previstos em lei.</p>
           </section>
 
           <section>
-            <h2>9. SEGURANÇA DA INFORMAÇÃO</h2>
+            <h2>10. SEGURANÇA DA INFORMAÇÃO</h2>
             <p>O Elisia CRM adota medidas técnicas e organizacionais adequadas para proteger os dados pessoais contra acessos não autorizados, destruição, perda, alteração, comunicação ou difusão indevida, em conformidade com os padrões de segurança da informação e exigências regulatórias aplicáveis.</p>
           </section>
 
           <section>
-            <h2>10. TRANSFERÊNCIA INTERNACIONAL DE DADOS</h2>
-            <p>Os dados pessoais poderão ser transferidos e tratados em servidores localizados fora do Brasil, especialmente em razão da utilização de serviços de infraestrutura em nuvem e integrações com fornecedores internacionais, incluindo a Meta Platforms, Inc., sempre observadas as garantias adequadas previstas na LGPD.</p>
+            <h2>11. TRANSFERÊNCIA INTERNACIONAL DE DADOS</h2>
+            <p>Os dados pessoais poderão ser transferidos e tratados em servidores localizados fora do Brasil, especialmente em razão da utilização de serviços de infraestrutura em nuvem e integrações com fornecedores internacionais, incluindo a Meta Platforms, Inc., o Google e provedores de inteligência artificial, sempre observadas as garantias adequadas previstas na LGPD.</p>
           </section>
 
           <section>
-            <h2>11. ALTERAÇÕES NESTA POLÍTICA</h2>
+            <h2>12. ALTERAÇÕES NESTA POLÍTICA</h2>
             <p>Esta Política de Privacidade poderá ser atualizada a qualquer momento, visando refletir alterações legais, regulatórias ou operacionais. A versão mais recente estará sempre disponível no site do Elisia CRM.</p>
           </section>
 
           <section>
-            <h2>12. DISPOSIÇÕES GERAIS</h2>
+            <h2>13. DISPOSIÇÕES GERAIS</h2>
             <p>Ao utilizar os serviços do Elisia CRM, o usuário declara estar ciente e de acordo com os termos desta Política de Privacidade.</p>
           </section>
         </div>

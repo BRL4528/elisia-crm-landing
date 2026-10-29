@@ -39,7 +39,7 @@ export function SiteFooter() {
                 Empresa
               </h4>
               <ul className="space-y-2 text-[13px] text-foreground/65">
-                <li><Link href="/privacy-policy"><a className="hover:text-foreground transition-colors">Privacidade</a></Link></li>
+                <li><a href="/privacy-policy" className="hover:text-foreground transition-colors">Privacidade</a></li>
                 <li><Link href="/terms-of-use"><a className="hover:text-foreground transition-colors">Termos de uso</a></Link></li>
                 <li><a href="mailto:contato@elisiacrm.com" className="hover:text-foreground transition-colors">Contato</a></li>
               </ul>

@@ -32,7 +32,8 @@ export function LandingFooter() {
             <h4>Ajuda</h4>
             <a href="#faq">Dúvidas frequentes</a>
             <Link href={LINKS.terms}>Termos de uso</Link>
-            <Link href={LINKS.privacy}>Privacidade</Link>
+            {/* Carga completa: a Vercel serve a política estática (privacy-policy.html). */}
+            <a href={LINKS.privacy}>Privacidade</a>
           </div>
         </div>
         <div className="f-bot">

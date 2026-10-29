@@ -6,7 +6,6 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Landing from "./pages/Landing";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 
 // A experiência imersiva (three.js/R3F) fica fora do chunk inicial da landing.
@@ -25,7 +24,6 @@ function Router() {
           <Experience />
         </Suspense>
       </Route>
-      <Route path={"/privacy-policy"} component={PrivacyPolicy} />
       <Route path={"/terms-of-use"} component={TermsOfUse} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
