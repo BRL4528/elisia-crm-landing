@@ -10,6 +10,11 @@ export const LINKS = {
   privacy: "/privacy-policy",
   terms: "/terms-of-use",
   legacy: "/experiencia",
+  downloads: "/downloads",
+  webApp: "https://app.elisiacrm.com",
+  /** Releases públicas do app desktop (o repo do código é privado). */
+  desktopReleasesApi: "https://api.github.com/repos/BRL4528/elisia-desktop-releases/releases/latest",
+  desktopReleasesPage: "https://github.com/BRL4528/elisia-desktop-releases/releases/latest",
 } as const;
 
 /** Formulário de contato já existente no Elisia (entra direto no funil). */
@@ -79,15 +84,9 @@ export interface Feature {
 
 export const FEATURES: Feature[] = [
   {
-    icon: "funnel",
-    title: "Funil de vendas",
-    body: "Arraste negócios entre etapas, veja valor em aberto e taxa de ganho por vendedor em tempo real.",
-    tag: "Kanban e lista",
-  },
-  {
     icon: "whatsapp",
-    title: "WhatsApp oficial",
-    body: "API oficial da Meta, vários atendentes no mesmo número e histórico salvo no contato.",
+    title: "Atendimento em todos os canais",
+    body: "WhatsApp oficial, Instagram, chat do site e e-mail numa caixa só, com vários atendentes e histórico salvo no contato.",
     tag: "Multiatendimento",
   },
   {
@@ -97,16 +96,52 @@ export const FEATURES: Feature[] = [
     tag: "ElisiaAgent",
   },
   {
+    icon: "assistant",
+    title: "Assistente da empresa",
+    body: "Pergunte em português e a Elisia busca clientes, vendas e números do sistema, monta resumos e adianta tarefas.",
+    tag: "IA no dia a dia",
+  },
+  {
+    icon: "funnel",
+    title: "Funil e carteira de clientes",
+    body: "Arraste negócios entre etapas, organize a carteira por vendedor e veja valor em aberto e taxa de ganho em tempo real.",
+    tag: "Kanban e lista",
+  },
+  {
     icon: "flow",
     title: "Automações",
     body: "Monte fluxos visuais: mensagem enviada, tarefa criada, etapa mudada, sem depender de TI.",
     tag: "Sem código",
   },
   {
-    icon: "calendar",
-    title: "Agenda e tarefas",
-    body: "Compromissos do time em uma visão, com lembrete automático para o cliente pelo WhatsApp.",
-    tag: "Lembretes",
+    icon: "social",
+    title: "Redes sociais",
+    body: "Crie, agende e publique posts no Instagram, Facebook e outras redes, com calendário e legenda escrita pela IA.",
+    tag: "ElisiaPost",
+  },
+  {
+    icon: "orders",
+    title: "Pedidos e estoque",
+    body: "Orçamento, pedido de venda e saldo de produtos ligados ao cliente, do balcão ao vendedor externo.",
+    tag: "Gestão",
+  },
+  {
+    icon: "fiscal",
+    title: "Notas fiscais",
+    body: "Emita NF-e, NFC-e e NFS-e a partir do pedido, com as regras fiscais da sua empresa já configuradas.",
+    tag: "NF-e, NFC-e e NFS-e",
+  },
+  {
+    icon: "finance",
+    title: "Financeiro",
+    body: "Contas a pagar e a receber, extrato e conciliação na mesma base das vendas, sem planilha paralela.",
+    tag: "Contas e extrato",
+  },
+  {
+    icon: "pdv",
+    title: "Frente de caixa",
+    body: "PDV para o balcão com emissão de NFC-e, que segue vendendo no computador mesmo quando a internet cai.",
+    tag: "PDV",
   },
   {
     icon: "sites",
@@ -116,26 +151,14 @@ export const FEATURES: Feature[] = [
   },
   {
     icon: "reports",
-    title: "Relatórios",
-    body: "Painéis de conversão, tempo de resposta e produtividade por atendente, prontos de fábrica.",
+    title: "Relatórios e painéis",
+    body: "Conversão, tempo de resposta, vendas e produtividade por pessoa, prontos de fábrica ou montados do seu jeito.",
     tag: "Tempo real",
-  },
-  {
-    icon: "integrations",
-    title: "Integrações",
-    body: "Meta, Google, e-mail, telefonia e ERPs por API. Conecte o que a operação já usa.",
-    tag: "API aberta",
-  },
-  {
-    icon: "access",
-    title: "Controle de acesso",
-    body: "Perfis por cargo, times e filiais: cada pessoa vê apenas o que precisa ver.",
-    tag: "Permissões",
   },
 ];
 
 export const STATS = [
-  { v: "1 lugar", l: "Conversas, contatos, agenda e propostas sem trocar de aba" },
+  { v: "1 lugar", l: "Atendimento, vendas, notas fiscais e financeiro sem trocar de sistema" },
   { v: "24h", l: "O agente de IA responde e qualifica fora do horário comercial" },
   { v: "14 dias", l: "Teste completo, sem cartão e sem contrato" },
   { v: "R$ 0", l: "Durante os 14 dias de teste, com 3 usuários incluídos" },
@@ -145,6 +168,10 @@ export const FAQ = [
   {
     q: "Como funciona o teste de 14 dias?",
     a: "Você cria a conta e usa o plano Profissional completo por 14 dias, sem cartão de crédito. No fim do período, escolhe o plano pago para continuar. Nada é cobrado automaticamente.",
+  },
+  {
+    q: "Preciso usar todos os módulos?",
+    a: "Não. Você começa pelo que a operação precisa hoje, como atendimento e funil, e liga pedidos, notas fiscais ou financeiro quando fizer sentido. Os dados já nascem conectados, então nada precisa ser migrado de novo.",
   },
   {
     q: "Preciso do WhatsApp oficial?",
@@ -165,6 +192,10 @@ export const FAQ = [
   {
     q: "Existe contrato de fidelidade?",
     a: "No mensal não há fidelidade: cancele quando quiser. Semestral e anual têm preço menor por serem pagos por período, e a troca de plano é ajustada de forma proporcional. Os pagamentos são processados pela Stripe, no cartão ou por boleto.",
+  },
+  {
+    q: "Tem aplicativo para computador?",
+    a: "Sim. O app da Elisia roda no Windows, no macOS e no Linux, avisa de cada conversa nova e se atualiza sozinho. É só baixar na página de downloads e entrar com o mesmo login.",
   },
 ];
 

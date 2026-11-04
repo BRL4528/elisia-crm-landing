@@ -11,26 +11,28 @@ export function LandingFooter() {
           <div>
             <Logo />
             <p className="f-note">
-              CRM com atendimento, automação e IA para times de vendas brasileiros.
+              Atendimento, vendas, marketing e gestão com IA, numa plataforma feita para empresas
+              brasileiras.
             </p>
           </div>
           <div>
             <h4>Produto</h4>
-            <a href="#produto">Funil de vendas</a>
-            <a href="#ia">Agente de IA</a>
-            <a href="#produto">WhatsApp oficial</a>
-            <a href="#produto">Automações</a>
-            <a href="#planos">Planos</a>
+            <a href="/#produto">Atendimento e vendas</a>
+            <a href="/#ia">Agente de IA</a>
+            <a href="/#produto">Pedidos e notas fiscais</a>
+            <a href="/#produto">Financeiro</a>
+            <a href="/#planos">Planos</a>
+            <Link href={LINKS.downloads}>App para computador</Link>
           </div>
           <div>
             <h4>Empresa</h4>
-            <a href="#contato">Contato</a>
+            <a href="/#contato">Contato</a>
             <a href={LINKS.signIn}>Entrar</a>
             <a href={LINKS.signUp}>Criar conta</a>
           </div>
           <div>
             <h4>Ajuda</h4>
-            <a href="#faq">Dúvidas frequentes</a>
+            <a href="/#faq">Dúvidas frequentes</a>
             <Link href={LINKS.terms}>Termos de uso</Link>
             {/* Carga completa: a Vercel serve a política estática (privacy-policy.html). */}
             <a href={LINKS.privacy}>Privacidade</a>

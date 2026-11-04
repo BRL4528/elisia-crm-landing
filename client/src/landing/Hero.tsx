@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { LINKS, STATS } from "./content";
 import { AppShot } from "./AppShot";
 import { Tick } from "./LandingBits";
@@ -14,21 +15,21 @@ export function Hero() {
       <section className="hero" id="top">
         <div className="wrap">
           <div className="hero-c">
-            <span className="pill">
-              <b>Novo</b> Agente de IA que responde no WhatsApp 24h
-            </span>
+            <Link className="pill" href={LINKS.downloads}>
+              <b>Novo</b> App da Elisia para Windows, macOS e Linux
+            </Link>
             <h1>
-              O CRM que <em>atende, vende</em> e acompanha por você
+              A plataforma que <em>atende, vende</em> e organiza sua empresa
             </h1>
             <p className="hero-s">
-              Todos os contatos, conversas e negócios da sua empresa em um só lugar, com um
-              agente de IA que responde, agenda e registra tudo no funil.
+              Atendimento, vendas, marketing, pedidos, notas fiscais e financeiro em um só
+              lugar, com uma IA que responde o cliente e trabalha junto com o seu time.
             </p>
             <div className="hero-a">
               <a className="btn btn-p btn-lg" href={LINKS.signUp}>
                 Começar 14 dias grátis
               </a>
-              <a className="btn btn-g btn-lg" href="#produto">
+              <a className="btn btn-g btn-lg" href="/#produto">
                 Ver como funciona
               </a>
             </div>

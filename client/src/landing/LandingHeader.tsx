@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
+import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { LINKS } from "./content";
 import { Logo } from "./LandingBits";
 
+// Âncoras com "/" na frente funcionam também fora da home (ex.: /downloads).
 const NAV = [
-  { href: "#produto", label: "Produto" },
-  { href: "#ia", label: "Atendimento com IA" },
-  { href: "#planos", label: "Planos" },
-  { href: "#faq", label: "Dúvidas" },
+  { href: "/#produto", label: "Produto" },
+  { href: "/#ia", label: "Atendimento com IA" },
+  { href: "/#planos", label: "Planos" },
+  { href: "/#faq", label: "Dúvidas" },
 ];
 
 export function LandingHeader() {
@@ -39,6 +41,7 @@ export function LandingHeader() {
               {i.label}
             </a>
           ))}
+          <Link href={LINKS.downloads}>Downloads</Link>
         </nav>
         <div className="nav-r">
           <a className="btn btn-t" href={LINKS.signIn}>
@@ -67,6 +70,9 @@ export function LandingHeader() {
               {i.label}
             </a>
           ))}
+          <Link className="item" href={LINKS.downloads} onClick={() => setOpen(false)}>
+            Downloads
+          </Link>
           <div className="acts">
             <a className="btn btn-g" href={LINKS.signIn}>
               Entrar

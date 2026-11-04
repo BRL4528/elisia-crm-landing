@@ -6,6 +6,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Landing from "./pages/Landing";
+import Downloads from "./pages/Downloads";
 import TermsOfUse from "./pages/TermsOfUse";
 
 // A experiência imersiva (three.js/R3F) fica fora do chunk inicial da landing.
@@ -19,6 +20,7 @@ function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Landing} />
+      <Route path={"/downloads"} component={Downloads} />
       <Route path={"/experiencia"}>
         <Suspense fallback={<ExperienceFallback />}>
           <Experience />

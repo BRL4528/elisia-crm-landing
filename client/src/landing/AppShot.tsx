@@ -1,10 +1,11 @@
 import type { ReactNode } from "react";
 import {
   BarChart3,
-  BarChartBig,
   Calendar,
   MessageCircle,
-  Users,
+  Package,
+  Receipt,
+  Wallet,
   Workflow,
   Zap,
 } from "lucide-react";
@@ -18,11 +19,13 @@ const SIDE: SideItem[] = [
   { icon: <BarChart3 size={15} strokeWidth={2} />, label: "Funil", on: true },
   { icon: <MessageCircle size={15} strokeWidth={2} />, label: "Conversas", badge: "12" },
   { icon: <Calendar size={15} strokeWidth={2} />, label: "Agenda" },
-  { icon: <Users size={15} strokeWidth={2} />, label: "Contatos" },
   { group: "Automação" },
   { icon: <Zap size={15} strokeWidth={2} />, label: "Agente de IA" },
   { icon: <Workflow size={15} strokeWidth={2} />, label: "Fluxos" },
-  { icon: <BarChartBig size={15} strokeWidth={2} />, label: "Relatórios" },
+  { group: "Gestão" },
+  { icon: <Package size={15} strokeWidth={2} />, label: "Pedidos" },
+  { icon: <Receipt size={15} strokeWidth={2} />, label: "Notas fiscais" },
+  { icon: <Wallet size={15} strokeWidth={2} />, label: "Financeiro" },
 ];
 
 const COLUMNS = [

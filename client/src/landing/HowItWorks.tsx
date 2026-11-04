@@ -9,7 +9,7 @@ export function HowItWorks() {
       <div className="wrap">
         <div className="sec-head">
           <span className="eyebrow">Como funciona no dia a dia</span>
-          <h2 className="h2">O cliente manda mensagem. O CRM cuida do resto.</h2>
+          <h2 className="h2">O cliente manda mensagem. A Elisia cuida do resto.</h2>
         </div>
 
         <div className="row">
@@ -69,8 +69,8 @@ export function HowItWorks() {
             <span className="eyebrow">03 · Gestão</span>
             <h3>Você enxerga a operação inteira</h3>
             <p>
-              Agenda do time, carga de atendimento e resultado por vendedor na mesma tela. Dá
-              para saber onde o funil trava antes do fim do mês.
+              Agenda do time, pedidos, financeiro e resultado por vendedor no mesmo sistema. Dá
+              para saber onde a operação trava antes do fim do mês.
             </p>
             <ul className="ticks">
               <li>
@@ -83,7 +83,7 @@ export function HowItWorks() {
               </li>
               <li>
                 <Tick />
-                App para acompanhar do celular, em campo
+                App para computador que avisa de cada conversa nova
               </li>
             </ul>
           </div>

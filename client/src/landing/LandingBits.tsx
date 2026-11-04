@@ -5,15 +5,19 @@ import {
   Calendar,
   Check,
   LayoutTemplate,
+  Megaphone,
   MessageCircle,
-  Settings,
-  Users,
+  MessagesSquare,
+  Package,
+  Receipt,
+  Store,
+  Wallet,
   Workflow,
   Zap,
 } from "lucide-react";
 
 /** Marca "elísia" com o monograma de três barras do design. */
-export function Logo({ href = "#top" }: { href?: string }) {
+export function Logo({ href = "/#top" }: { href?: string }) {
   return (
     <a className="logo" href={href}>
       <span className="logo-m" aria-hidden>
@@ -37,10 +41,14 @@ const FEATURE_ICONS: Record<string, ReactNode> = {
   ai: <Zap size={18} strokeWidth={2} />,
   flow: <Workflow size={18} strokeWidth={2} />,
   calendar: <Calendar size={18} strokeWidth={2} />,
+  assistant: <MessagesSquare size={18} strokeWidth={2} />,
+  social: <Megaphone size={18} strokeWidth={2} />,
+  orders: <Package size={18} strokeWidth={2} />,
+  fiscal: <Receipt size={18} strokeWidth={2} />,
+  finance: <Wallet size={18} strokeWidth={2} />,
+  pdv: <Store size={18} strokeWidth={2} />,
   sites: <LayoutTemplate size={18} strokeWidth={2} />,
   reports: <BarChartBig size={18} strokeWidth={2} />,
-  integrations: <Settings size={18} strokeWidth={2} />,
-  access: <Users size={18} strokeWidth={2} />,
 };
 
 export function featureIcon(name: string): ReactNode {

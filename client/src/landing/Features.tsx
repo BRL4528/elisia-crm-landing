@@ -7,10 +7,10 @@ export function Features() {
       <div className="wrap">
         <div className="sec-head center">
           <span className="eyebrow">O que você recebe</span>
-          <h2 className="h2">Um sistema só, do primeiro contato ao pós-venda</h2>
+          <h2 className="h2">Um sistema só, do primeiro contato à nota fiscal</h2>
           <p className="lead">
-            Cada módulo já vem conectado ao funil. Nada de integrar cinco ferramentas para saber
-            quem falou com o cliente.
+            Atendimento, vendas, marketing e gestão já conversam entre si. Nada de integrar cinco
+            ferramentas para saber o que aconteceu com o cliente.
           </p>
         </div>
         <div className="feats">
